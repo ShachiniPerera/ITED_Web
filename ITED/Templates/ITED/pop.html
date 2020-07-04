@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #pop
+        { width: 1000px;
+        height: 1000px;
+        border: 2px solid gray;
+        bottom : 50%;
+        right: 30%;
+        position: fixed;
+        border-radius: 15px;
+
+
+        box-shadow: inset -4px -4px rgb(255, 0, 0);
+        background-color: 	rgb(255, 0, 0);
+        }
+
+        #close{right: 5;
+              top: 5;
+              float: right;
+              }
+
+        a{text-decoration: none;
+              font-size: 20px;
+              color: white;
+
+              }
+    </style>
+</head>
+<body>
+<div id="pop">
+    <button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+    <a href="https://google.com"> This is pop box here</a>
+</div>
+
+
+
+
+
+</body>
+</html>
