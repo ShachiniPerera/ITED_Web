@@ -22,77 +22,87 @@
     </head>
 
  <body id="page-top" style="background-color: #E6E6FA ">
+
+
+
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" id="mainNav" style="background-color:#00001a;" >
-            <div class="container"  >
+        <nav class="navbar navbar-expand-lg navbar-dark   fixed-top" id="mainNav" style="background-color:#00001a;" >
+
+
+
+
+            <div class="container">
+
+
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                    <img src=" {% static 'assets/img/ITED_IO.jpg' %}"  width="150" height=""  alt="" />  </a>
+                     <img src=" {% static 'assets/img/ITED_IO.jpg' %}"  width="150" height=""  alt="" />  </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ml-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/ITED/index/#home" >Home</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/ITED/about/" >About Us</a></li>
-                                              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'index_page' %}" >Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'about_page' %}" >About Us</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
 Services
 </a>
 <div class="dropdown-menu border-0 shadow animate slideIn" aria-labelledby="navbarDropdown">
-<a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services1/">Structured Cabling Solutions </a>
+<a class="dropdown-item" href="{% url 'services1_page' %}">Structured Cabling Solutions </a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
 
-    <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services2/">Intelligent Security Solutions </a>
-<span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
-
-    </span>
-
-<a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services/">Managed firewall services</a>
-<span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
-
-    </span>
-
-
-
-   <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services3/">Managed IT Services</a>
+    <a class="dropdown-item" href="{% url 'services2_page' %}">Intelligent Security Solutions </a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
 
 
-   <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services4/">Disaster Recovery Solutions</a>
+    <a class="dropdown-item" href="{% url 'services_page' %}">Managed firewall services</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
 
-     <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services5/">Digital Marketing</a>
-<span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
-
-    </span>
-
-     <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services6/">Business Software Solutions</a>
+   <a class="dropdown-item" href="{% url 'services3_page' %}">Managed IT Services</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
 
-     <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services7/">eCommerce</a>
+
+   <a class="dropdown-item" href="{% url 'services4_page' %}">Disaster Recovery Solutions</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
-      <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services8/">Web Hosting</a>
+
+     <a class="dropdown-item" href="{% url 'services5_page' %}">Digital Marketing</a>
+<span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
+
+    </span>
+
+     <a class="dropdown-item" href="{% url 'services6_page' %}">Business Software Solutions</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
 
-     <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services9/">Video Conferencing Solutions</a>
+     <a class="dropdown-item" href="{% url 'services7_page' %}">eCommerce</a>
+<span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
+
+    </span>
+
+      <a class="dropdown-item" href="{% url 'services8_page' %}">Web Hosting</a>
+<span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
+
+    </span>
+
+
+     <a class="dropdown-item" href="{% url 'services9_page' %}">Video Conferencing Solutions</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
@@ -106,19 +116,19 @@ Products
 </a>
 <div class="dropdown-menu border-0 shadow animate slideIn" aria-labelledby="navbarDropdown">
 
- <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/products1/">Ubiquiti UNIFI</a>
+ <a class="dropdown-item" href="{% url 'products1_page' %}">Ubiquiti UNIFI</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
 
-     <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/products2/">Hikvision</a>
+     <a class="dropdown-item" href="{% url 'products2_page' %}">Hikvision</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
 
-     <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/products3/">Waiter Calling System</a>
+     <a class="dropdown-item" href="{% url 'products3_page' %}">Waiter Calling System</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
@@ -127,24 +137,34 @@ Products
 </div>
 </li>
 <!--                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/products">products</a></li>-->
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/ITED/gallery/" >Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/ITED/careers/">careers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'gallery_page' %}" >Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'careers_page' %}">careers</a></li>
 
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/ITED/disclaimer/" >Disclaimer</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/ITED/contact/" >Contact</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'disclaimer_page' %}" >Disclaimer</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'contact_page' %}" >Contact</a></li>
 
 
+
+
+<!--                        <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/itedtechnobiz"><i class="fab fa-twitter"><img class="rounded-circle img-fluid" src=" {% static 'assets/img/about/t1.jpg' %}" alt="" /></i></a>-->
+<!--                        <li><a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/techited"><i class="fab fa-facebook-f"><img class="rounded-circle img-fluid" src=" {% static 'assets/img/about/f1.jpg' %}" alt="" /></i></a></li>-->
+<!--                        <li><a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/ited-technologies-and-solutions-2bb8b3164/?originalSubdomain=lk"><i class="fab fa-linkedin-in"><img class="rounded-circle img-fluid" src=" {% static 'assets/img/about/l1.jpg' %}" alt="" /></i></a></li>-->
 
 
                     </ul>
 
 
+
                 </div>
+
+
+
 
             </div>
 
 
-            <!--                <div class="col-lg-4 text-lg-right">-->
+
+<!--                <div class="col-lg-4 text-lg-right">-->
 <!--                        <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/itedtechnobiz"><i class="fab fa-twitter"><img class="rounded-circle img-fluid" src=" {% static 'assets/img/about/t1.jpg' %}" alt="" /></i></a>-->
                         <a class="btn btn-dark btn-social mx-2" href="mailto:info@ited.biz"><i class="fab fa-facebook-f"><img class="rounded-circle img-fluid" src=" {% static 'assets/img/about/e2.jpg' %}" alt="" /></i></a> <p style="color:#ffffff;">info@ited.biz</p>
                         <a class="btn btn-dark btn-social mx-2" href=""><i class="fab fa-linkedin-in"><img class="rounded-circle img-fluid" src=" {% static 'assets/img/about/t2.jpg' %}" alt="" /></i></a>

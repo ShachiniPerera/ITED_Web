@@ -65,61 +65,61 @@
 Services
 </a>
 <div class="dropdown-menu border-0 shadow animate slideIn" aria-labelledby="navbarDropdown">
-<a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services1/">Structured Cabling Solutions </a>
+<a class="dropdown-item" href="{% url 'services1_page' %}">Structured Cabling Solutions </a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
 
-    <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services2/">Intelligent Security Solutions </a>
-<span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
-
-    </span>
-
-
-
-    <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services/">Managed firewall services</a>
-<span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
-
-    </span>
-
-
-   <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services3/">Managed IT Services</a>
+    <a class="dropdown-item" href="{% url 'services2_page' %}">Intelligent Security Solutions </a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
 
 
-   <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services4/">Disaster Recovery Solutions</a>
+    <a class="dropdown-item" href="{% url 'services_page' %}">Managed firewall services</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
 
-     <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services5/">Digital Marketing</a>
-<span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
-
-    </span>
-
-     <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services6/">Business Software Solutions</a>
+   <a class="dropdown-item" href="{% url 'services3_page' %}">Managed IT Services</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
 
-     <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services7/">eCommerce</a>
+
+   <a class="dropdown-item" href="{% url 'services4_page' %}">Disaster Recovery Solutions</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
-      <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services8/">Web Hosting</a>
+
+     <a class="dropdown-item" href="{% url 'services5_page' %}">Digital Marketing</a>
+<span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
+
+    </span>
+
+     <a class="dropdown-item" href="{% url 'services6_page' %}">Business Software Solutions</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
 
-     <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/services9/">Video Conferencing Solutions</a>
+     <a class="dropdown-item" href="{% url 'services7_page' %}">eCommerce</a>
+<span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
+
+    </span>
+
+      <a class="dropdown-item" href="{% url 'services8_page' %}">Web Hosting</a>
+<span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
+
+    </span>
+
+
+     <a class="dropdown-item" href="{% url 'services9_page' %}">Video Conferencing Solutions</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
@@ -133,19 +133,19 @@ Products
 </a>
 <div class="dropdown-menu border-0 shadow animate slideIn" aria-labelledby="navbarDropdown">
 
- <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/products1/">Ubiquiti UNIFI</a>
+ <a class="dropdown-item" href="{% url 'products1_page' %}">Ubiquiti UNIFI</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
 
-     <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/products2/">Hikvision</a>
+     <a class="dropdown-item" href="{% url 'products2_page' %}">Hikvision</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
 
 
-     <a class="dropdown-item" href="http://127.0.0.1:8000/ITED/products3/">Waiter Calling System</a>
+     <a class="dropdown-item" href="{% url 'products3_page' %}">Waiter Calling System</a>
 <span class="d-block" tabindex="0" data-toggle="tooltip" data-placement="left" title="Under Development!" data-container=".sb-navbar">
 
     </span>
@@ -154,11 +154,11 @@ Products
 </div>
 </li>
 <!--                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/products">products</a></li>-->
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/ITED/gallery/" >Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/ITED/careers/">careers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'gallery_page' %}" >Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'careers_page' %}">careers</a></li>
 
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/ITED/disclaimer/" >Disclaimer</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://127.0.0.1:8000/ITED/contact/" >Contact</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'disclaimer_page' %}" >Disclaimer</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'contact_page' %}" >Contact</a></li>
 
 
 
